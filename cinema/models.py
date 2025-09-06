@@ -6,10 +6,9 @@ class Movie(models.Model):
         max_length=255,
         null=False
     )
-    description = models.CharField(
+    description = models.TextField(
         blank=True,
         null=True,
-        max_length=255
     )
     duration = models.IntegerField()
 
